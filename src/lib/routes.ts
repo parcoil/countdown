@@ -1,6 +1,10 @@
 const routes = [
   { name: "Home", path: "/", footerText: "Home" },
-  { name: "Christmas", path: "/christmas", footerText: "Christmas Countdown" },
+  {
+    name: "Christmas 2026",
+    path: "/christmas",
+    footerText: "Christmas Countdown",
+  },
   {
     name: "Hytale Beta Launch",
     path: "/hytale",

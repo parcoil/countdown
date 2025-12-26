@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { useHead } from '@unhead/react';
+import { useHead } from "@unhead/react";
 import { startSnow, stopSnow } from "../particles";
-
-const christmas = new Date("December 25, 2025 23:59:59").getTime();
+const christmas = new Date("December 25, 2026 00:00:00").getTime();
 
 function formatTimeLeft(target: number) {
   const now = Date.now();
@@ -16,9 +15,13 @@ function formatTimeLeft(target: number) {
 
 function Christmas() {
   useHead({
-    title: 'Christmas Countdown - Days Until Christmas 2025',
+    title: "Christmas Countdown - Days Until Christmas 2026",
     meta: [
-      { name: 'description', content: 'Live countdown to Christmas 2025. See how many days, hours, minutes, and seconds until Christmas Day.' },
+      {
+        name: "description",
+        content:
+          "Live countdown to Christmas 2026. See how many days, hours, minutes, and seconds until Christmas Day.",
+      },
     ],
   });
 
@@ -42,7 +45,10 @@ function Christmas() {
   }, []);
 
   return (
-    <div className="relative bg-linear-to-br from-red-950 via-red-900 to-green-800 text-white h-screen overflow-hidden" style={{ fontFamily: '"Mountains of Christmas", serif' }}>
+    <div
+      className="relative bg-linear-to-br from-red-950 via-red-900 to-green-800 text-white h-screen overflow-hidden"
+      style={{ fontFamily: '"Mountains of Christmas", serif' }}
+    >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       {/* Glowing orbs background */}
