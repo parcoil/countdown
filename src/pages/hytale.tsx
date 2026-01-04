@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHead } from "@unhead/react";
 
-const hytaleRelease = new Date("January 13, 2026 23:59:59").getTime();
+const hytaleRelease = new Date("January 13, 2026 7:00:00").getTime();
 
 function formatTimeLeft(target: number) {
   const now = Date.now();
